@@ -1,0 +1,8 @@
+<h1> This is the students index page </h1>
+
+<% @students.each do [student] %>
+    <ul>
+        <li>Name: <%= student.first_name %></li>
+        <li>E-mail: <%= student.email %></li>
+    </ul>
+<% end %>
