@@ -17,6 +17,7 @@ get '/' do
 end
 
 post '/signup' do
+  byebug
   user = User.new(params[:user])
   user.save
   if user.save
